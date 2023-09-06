@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "simplifiedauth",
+  "version": "${version}",
+
+  "name": "SimplifiedAuth",
+  "description": "Simplified authorization plugin.",
+  "authors": [
+    "Myknakryu"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pl.myku.simplifiedAuth.SimplifiedAuth"
+    ]
+  },
+  "mixins": [
+    "simplifiedauth.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "halplibe": ">=2.2.0"
+  },
+  "suggests": {
+  }
+}

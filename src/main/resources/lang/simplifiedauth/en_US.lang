@@ -1,0 +1,2 @@
+greeter.registration=Use /register <password> <password> if not registered
+greeter.login=Use /login <password> if you already registered on server

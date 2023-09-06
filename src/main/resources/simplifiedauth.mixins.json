@@ -1,0 +1,21 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "pl.myku.simplifiedAuth.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+    ],
+    "client": [
+    ],
+    "server": [
+        "CommandsMixin",
+        "EntityPlayerMixin",
+        "EntityPlayerMPMixin",
+        "ServerConfigurationManagerMixin",
+        "NetServerHandlerMixin",
+        "NetworkManagerMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+  }
+}
