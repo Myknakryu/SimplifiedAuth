@@ -51,7 +51,7 @@ public class JsonDbManager implements IDbManager {
     }
     private JsonObject findPlayer(String username){
         if (!db.getAsJsonArray("Users").isEmpty()) {
-            for(int i = 0; i < db.size(); i++){
+            for(int i = 0; i < db.getAsJsonArray("Users").size(); i++){
                 JsonObject tmpUser = db.getAsJsonArray("Users").get(i).getAsJsonObject();
                 if(tmpUser.get("user").getAsString().equals(username)){
                     return tmpUser;

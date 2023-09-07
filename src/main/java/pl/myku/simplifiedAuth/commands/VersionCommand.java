@@ -6,7 +6,7 @@ public class VersionCommand extends Command {
 
     public boolean execute(CommandHandler handler, CommandSender sender, String[] args) {
         if(sender.getPlayer() != null) {
-            sender.sendMessage("Version 0.0.1 ");
+            sender.sendMessage("Version 0.0.1.2 ");
             return true;
         }
         else{
