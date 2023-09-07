@@ -1,9 +1,9 @@
 package pl.myku.simplifiedAuth.db;
 
 public interface IDbManager {
-    public Boolean loginPlayer(String username, String password);
-    public Boolean isPlayerRegistered(String username);
-    public void addPlayerToDatabase(String username, String password);
-    public void changePassword(String username, String password);
-    public void reloadDb();
+    Boolean loginPlayer(String username, String password);
+    Boolean isPlayerRegistered(String username);
+    void addPlayerToDatabase(String username, String password);
+    void changePassword(String username, String password);
+    void reloadDb();
 }

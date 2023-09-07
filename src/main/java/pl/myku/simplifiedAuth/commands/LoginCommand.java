@@ -7,7 +7,7 @@ import net.minecraft.core.net.command.CommandSender;
 import pl.myku.simplifiedAuth.SimplifiedAuth;
 
 public class LoginCommand extends Command{
-    public LoginCommand() {super("login", new String[0]);}
+    public LoginCommand() {super("login");}
     public boolean execute(CommandHandler handler, CommandSender sender, String[] args) {
         EntityPlayer player;
         if(sender.getPlayer() != null) {

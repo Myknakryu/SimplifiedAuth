@@ -6,11 +6,10 @@ import net.minecraft.core.net.command.CommandHandler;
 import net.minecraft.core.net.command.CommandSender;
 import pl.myku.simplifiedAuth.SimplifiedAuth;
 
-import java.util.Arrays;
 
 public class RegisterCommand extends Command {
     public RegisterCommand() {
-        super("register", new String[0]);
+        super("register");
     }
 
     public boolean execute(CommandHandler handler, CommandSender sender, String[] args) {

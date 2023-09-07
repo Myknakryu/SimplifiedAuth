@@ -85,7 +85,7 @@ abstract class NetServerHandlerMixin {
                 return;
             }
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            SimplifiedAuth.LOGGER.error(e.getMessage());
         }
         ci.cancel();
     }

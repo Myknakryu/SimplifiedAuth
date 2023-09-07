@@ -8,7 +8,7 @@ import pl.myku.simplifiedAuth.SimplifiedAuth;
 
 public class ChangePasswordCommand extends Command {
     public ChangePasswordCommand() {
-        super("changepassword", new String[0]);
+        super("changepassword");
     }
 
     public boolean execute(CommandHandler handler, CommandSender sender, String[] args) {

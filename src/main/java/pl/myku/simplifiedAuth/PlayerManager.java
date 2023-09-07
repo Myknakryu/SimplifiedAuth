@@ -1,7 +1,6 @@
 package pl.myku.simplifiedAuth;
 
 import net.minecraft.core.entity.player.EntityPlayer;
-import net.minecraft.server.entity.player.EntityPlayerMP;
 import java.util.HashMap;
 
 public class PlayerManager extends HashMap<String, Player>{

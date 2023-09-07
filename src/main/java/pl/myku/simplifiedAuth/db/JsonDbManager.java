@@ -50,7 +50,7 @@ public class JsonDbManager implements IDbManager {
         }
     }
     private JsonObject findPlayer(String username){
-        if (db.getAsJsonArray("Users").size() > 0) {
+        if (!db.getAsJsonArray("Users").isEmpty()) {
             for(int i = 0; i < db.size(); i++){
                 JsonObject tmpUser = db.getAsJsonArray("Users").get(i).getAsJsonObject();
                 if(tmpUser.get("user").getAsString().equals(username)){
@@ -67,7 +67,7 @@ public class JsonDbManager implements IDbManager {
             return Utils.checkPassword(password, player.get("password").getAsString());
         }
         return false;
-    };
+    }
 
     public void changePassword(String username, String password){
         JsonObject player = findPlayer(username);
@@ -80,7 +80,7 @@ public class JsonDbManager implements IDbManager {
 
     public Boolean isPlayerRegistered(String username){
         return findPlayer(username) != null;
-    };
+    }
 
     public void addPlayerToDatabase(String username, String password){
         JsonObject player = new JsonObject();
@@ -88,5 +88,5 @@ public class JsonDbManager implements IDbManager {
         player.addProperty("password", Utils.hashPassword(password));
         db.getAsJsonArray("Users").add(player);
         saveDb();
-    };
+    }
 }

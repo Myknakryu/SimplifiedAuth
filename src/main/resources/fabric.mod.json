@@ -27,7 +27,7 @@
 
   "depends": {
     "fabricloader": ">=0.13.3",
-    "halplibe": ">=2.2.0"
+    "halplibe": ">=2.1.6"
   },
   "suggests": {
   }
