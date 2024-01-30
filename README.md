@@ -7,7 +7,7 @@ Libraries used in this project are using:
 - jBcrypt (MIT): https://github.com/jeremyh/jBCrypt
 - halplibe (CC0): https://github.com/Turnip-Labs/bta-halplibe
 ## Setup
-1. Mod to work would require working server instance of Babric BTA server ([available here](https://github.com/Turnip-Labs/babric-instance-repo/releases)) with halplibe version at least 2.1.6 (which was by default included in BTA instance) installed.<br/>
+1. Mod to work would require working server instance of Babric BTA server ([available here](https://github.com/Turnip-Labs/babric-instance-repo/releases)) with halplibe version at least 3.2.1 (which was by default included in BTA instance) installed.<br/>
 2. Don't forget about read/write privilages on server directory and any other directory specified by config (by default should be available for server but still, this can sometime happen)
 
 ## Config
