@@ -18,7 +18,7 @@ abstract class NetServerHandlerMixin {
     private static int timeout = 600;
     @Shadow private EntityPlayerMP playerEntity;
 
-    @Shadow public abstract void teleportTo(double d, double d1, double d2, float f, float f1);
+    @Shadow public abstract void teleportAndRotate(double d, double d1, double d2, float f, float f1);
 
     @Shadow private int playerInAirTime;
 
@@ -59,7 +59,7 @@ abstract class NetServerHandlerMixin {
         }
         if(System.nanoTime() >= (teleportTimeout + 5000000L)){
             playerInAirTime = 0;
-            teleportTo(playerEntity.x, playerEntity.y, playerEntity.z, playerEntity.yRot, playerEntity.xRot);
+            teleportAndRotate(playerEntity.x, playerEntity.y, playerEntity.z, playerEntity.yRot, playerEntity.xRot);
             teleportTimeout = System.nanoTime();
             timeout--;
         }
